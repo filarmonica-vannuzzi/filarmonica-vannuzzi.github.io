@@ -179,9 +179,9 @@
 }
 
 /* Ensure the header spans the full width and is centered */
-.image-post-header {
+.post-header {
   position: relative;
-  height: 20vw; /* The height will be 20% of the viewport width */
+  height: 20vw; /* The height will be 40% of the viewport width */
   max-height: 40vh; /* Optional: Set a max height so it doesn’t get too tall */
   display: flex; /* Flexbox to center the contents */
   justify-content: center; /* Horizontally center the contents */
@@ -190,28 +190,6 @@
   padding: 0; /* Remove default padding */
   margin-bottom: 20px;
   z-index: -20;
-}
-
-.post-header {
-  position: relative;
-  height: 50px;   
-  display: flex; /* Flexbox to center the contents */
-  justify-content: center; /* Horizontally center the contents */
-  align-items: center; /* Vertically center the contents */
-  margin: 0 0; /* Remove default margins */
-  padding: 20px 0; /* Remove default padding */
-  z-index: -20;
-}
-
-/* Pseudo-element for vignette effect */
-.image-post-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 5%);
-  z-index: 1; /* Place above the background image */
 }
 
 /* Style the image */
@@ -225,23 +203,10 @@
 }
 
 /* Style the title */
-.shadowed-post-title {
+.post-title {
   position: relative;
   z-index: -5; /* Ensure the title is above the background image */
   color: white; /* Make the title visible against the background */
   padding: 1vw 0; /* Adjust padding to add some space */
-  font-size: 42px;
-  margin-right: auto;
-  margin-top: auto;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow */
-}
-
-/* Style the title */
-.post-title {
-  position: relative;
-  z-index: -5; /* Ensure the title is above the background image */
-  padding: 1vw 0; /* Adjust padding to add some space */
-  font-size: 42px;
-  margin-right: auto;
-  margin-top: auto;
 }
