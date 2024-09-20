@@ -51,3 +51,16 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Menu
+menu:
+  - name: "La Filarmonica"
+    link: "/filarmonica"
+  - name: "Scuola di Musica"
+    link: "/scuola"
+  - name: "Altri Progetti"
+    dropdown:
+      - name: "Banda Larga"
+        link: "/bandalarga"
+      - name: "Propedeutica"
+        link: "/propedeutica"
