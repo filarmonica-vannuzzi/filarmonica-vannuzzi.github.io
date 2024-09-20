@@ -1,2 +1,190 @@
+---
+---
+
 @import "minima";
-@import "custom" 
+
+.header-wrapper {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+
+
+  display: flex;
+  justify-content: space-between; /* Space between title and hamburger */
+  align-items: center; /* Vertically center items */
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.site-nav {
+  position: relative;
+  border: none;
+  background: none;
+  margin-left: auto;
+  display: flex; /* Enable flexbox */
+}
+
+.nav-list {
+  display: flex; /* Use flex for the list */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+  list-style: none; /* Remove list styles */
+}
+
+/* Horizontal menu */
+.menu {
+  list-style: none;
+  margin: 2px;
+  padding: 2px;
+  display: flex; /* Make the menu items align horizontally */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+/* Dropdown items in the menu */
+.menu > .dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  padding: 0 5px; /* Spacing between the horizontal items */
+}
+
+/* Regular menu item links */
+.page-link {
+  color: $text-color;
+  line-height: $base-line-height; /* Ensure consistent vertical alignment */
+  font-size: inherit;
+  display: block;
+  padding: 5px 2px; /* Adjust padding for the regular link */
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Drop button styling */
+.dropbtn {
+  color: $text-color;
+  background: none;
+  border: none;
+  font-size: inherit;
+  line-height: $base-line-height; /* Ensure consistent vertical alignment */
+  display: block;
+  padding: 5px 2px; /* Same (almost) padding as page-link to avoid layout shifts */
+  cursor: pointer;
+  padding-top: 1px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Submenu styling (hidden by default) */
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Show submenu below the main item */
+  left: 0;
+  background-color: #181818;
+  border: 0px;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+}
+
+/* Show submenu when dropdown button is active */
+.show {
+  display: block;
+}
+
+/* Submenu links */
+.sub-menu li {
+  line-height: $base-line-height; /* Ensure consistent vertical alignment */
+  margin: 0;
+}
+
+.sub-menu a {
+  color: #bbbbbb;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Ensure the submenu is placed correctly relative to the main menu */
+.menu > .dropdown:hover .sub-menu {
+  display: block;
+}
+
+.nav-toggle {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hamburger icon styling */
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: $text-color;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: block; /* Show the hamburger button */
+    position: relative;
+    z-index: 10; /* Ensure the toggle stays on top */
+    margin-left: auto; /* Align the hamburger to the right */
+  }
+
+  /* Hide the menu by default */
+  .site-nav {
+    display: none;
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Align items to the left */
+  }
+
+  .nav-list {
+    flex-direction: column; /* Stack menu items vertically */
+  }
+
+  /* Show the menu when the toggle is activated */
+  .show-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Prevent overflow on small screens */
+    padding: 10px; /* Optional padding for breathing room */
+    border-radius: 5px; /* Rounded corners */
+  }
+}

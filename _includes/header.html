@@ -1,12 +1,24 @@
 <header class="site-header">
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+  <div class="header-wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-		<nav class="site-nav">
-	 		<ul class="nav-list"></ul>
-		</nav>
+    <!-- Hamburger icon -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    <nav class="site-nav" id="nav-menu">
+      <ul class="nav-list">
+        {% include nav.html %}
+      </ul>
+    </nav>
   </div>
 </header>
+
+<script>
+  // Function to toggle the visibility of the navigation menu
+  function toggleMenu() {
+    var nav = document.getElementById("nav-menu");
+    nav.classList.toggle("show-menu");
+  }
+</script>
