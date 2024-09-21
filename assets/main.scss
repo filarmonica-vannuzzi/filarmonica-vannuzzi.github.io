@@ -193,14 +193,7 @@
 }
 
 .post-header {
-  position: relative;
-  height: 50px;   
-  display: flex; /* Flexbox to center the contents */
-  justify-content: center; /* Horizontally center the contents */
-  align-items: center; /* Vertically center the contents */
-  margin: 0 0; /* Remove default margins */
-  padding: 20px 0; /* Remove default padding */
-  z-index: -20;
+  margin: 20px 0;
 }
 
 /* Pseudo-element for vignette effect */
@@ -230,18 +223,9 @@
   z-index: -5; /* Ensure the title is above the background image */
   color: white; /* Make the title visible against the background */
   padding: 1vw 0; /* Adjust padding to add some space */
-  font-size: 42px;
+  font-size: 38px;
   margin-right: auto;
   margin-top: auto;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow */
 }
 
-/* Style the title */
-.post-title {
-  position: relative;
-  z-index: -5; /* Ensure the title is above the background image */
-  padding: 1vw 0; /* Adjust padding to add some space */
-  font-size: 42px;
-  margin-right: auto;
-  margin-top: auto;
-}
