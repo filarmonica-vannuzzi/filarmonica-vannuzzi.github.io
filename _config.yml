@@ -21,7 +21,7 @@
 title: Filarmonica Vannuzzi
 email: filarmonicavannuzzi@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Sito ufficiale della Filarmonica Valerio Vannuzzi - Banda Larga APS
+  Sito ufficiale della Filarmonica Valerio Vannuzzi - Banda Larga
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://filarmonica-vannuzzi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
