@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Benvenuti!"
-date: 2024-09-22 11:55:10 +0200
+date: 2024-09-21 11:55:10 +0200
 ---
 
 Oggi apre il sito ufficiale della Filarmonica Valerio Vannuzzi, l'associazione che gestisce la banda di Roccalbegna, la scuola di musica e la Banda Larga.
