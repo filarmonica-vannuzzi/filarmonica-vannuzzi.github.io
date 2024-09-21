@@ -47,6 +47,6 @@ Questo è un [link](https://www.youtube.com/watch?v=l0nYMRz1IfU).
 Volendo, vanno bene anche i link brutti: <https://www.markdownguide.org/basic-syntax/>
 
 Questa è un'immagine: 
-![lupintic](https://drive.google.com/thumbnail?id=1M8Qc58MYa-JKk_wNQlKMHudxQNKS6WrR&sz=w740 "E questa è una didascalia!")
+![lupintic](https://drive.google.com/thumbnail?id=1M8Qc58MYa-JKk_wNQlKMHudxQNKS6WrR&sz=w740 "E questa è una didascalia!"){:style="display:block; width: 100%"}
 
 Tutte le immagini vengono caricate da remoto, dalla nostra cartella di [Drive](https://drive.google.com/drive/folders/1S0SpideKCPvGGS3IbT6155VKyosK4Zfa?usp=drive_link)!
