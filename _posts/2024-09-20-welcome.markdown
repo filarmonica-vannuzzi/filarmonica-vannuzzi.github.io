@@ -12,9 +12,12 @@ Titoli, come quello qua sopra, in più dimensioni:
 
 ## Grosso
 ### Meno Grosso
-# Giusto
 #### piccolino
 ##### proprio piccolo piccollo
+
+o puoi fidarti del computer per avere un titolo:
+
+# Giusto
 
 Sono supportati: testo in **grassetto**, *corsivo*, ***grassetto e corsivo***, nonché:
 > Citazioni!, che possono addirittura ↓
