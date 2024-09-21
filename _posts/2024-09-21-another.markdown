@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Ancora?"
-date:   2024-09-21 11:55:10 +0200
----
-
-Questo è un altra notizia, giusto per vedere se vengono visualizzate correttamente.

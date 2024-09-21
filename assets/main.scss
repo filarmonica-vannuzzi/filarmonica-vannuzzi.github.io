@@ -181,7 +181,7 @@
 /* Ensure the header spans the full width and is centered */
 .image-post-header {
   position: relative;
-  height: 20vw; /* The height will be 20% of the viewport width */
+  height: 30vw; /* The height will be 20% of the viewport width */
   max-height: 40vh; /* Optional: Set a max height so it doesn’t get too tall */
   display: flex; /* Flexbox to center the contents */
   justify-content: center; /* Horizontally center the contents */
@@ -229,3 +229,6 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow */
 }
 
+.site-logo {
+  max-height: 45px; /* Smaller size */
+}

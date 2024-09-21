@@ -1,6 +1,9 @@
 <header class="site-header">
   <div class="header-wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+			<img class="site-logo" src="{{ "/assets/pics/logo.png" | relative_url }}" alt="Site Logo">
+			{{ site.title | escape }}
+		</a>
     <!-- Hamburger icon -->
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
       <span class="hamburger"></span>
